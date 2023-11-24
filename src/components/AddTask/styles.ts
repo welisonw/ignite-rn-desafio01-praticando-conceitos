@@ -9,10 +9,6 @@ export const styles = StyleSheet.create({
     width: "100%",
     height: 54,
     marginTop: -27,
-  },
-
-  buttonIcon: {
-    fontFamily: "Inter",
-    textAlignVertical: "center", // Ajuste importante
+    marginBottom: 32,
   },
 });
