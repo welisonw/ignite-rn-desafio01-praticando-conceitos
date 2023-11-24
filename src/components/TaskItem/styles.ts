@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors, fonts } from "../../tokens";
 
 export const styles = StyleSheet.create({
   container: {
@@ -15,23 +16,23 @@ export const styles = StyleSheet.create({
     paddingLeft: 12,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: "#333333",
+    borderColor: `${colors.base.gray400}`,
   },
 
   containerTaskDone: {
-    borderColor: "#262626",
+    borderColor: `${colors.base.gray500}`,
   },
   
   textCreated: {
     flex: 1,
-    color: "#F2F2F2",
-    fontSize: 14,
+    color: `${colors.base.gray100}`,
+    fontSize: Number(`${fonts.fontSizes.md}`),
   },
 
   textDone: {
     flex: 1,
-    color: "#808080",
-    fontSize: 14,
+    color: `${colors.base.gray300}`,
+    fontSize: Number(`${fonts.fontSizes.md}`),
     textDecorationLine: "line-through",
   },
 

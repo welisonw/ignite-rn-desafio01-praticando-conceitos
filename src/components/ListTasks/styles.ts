@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors, fonts } from "../../tokens";
 
 export const styles = StyleSheet.create({
   taksInformations: {
@@ -20,27 +21,28 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     width: 24,
     height: 19,
-    backgroundColor: "#333333",
+    backgroundColor: `${colors.base.gray400}`,
     paddingHorizontal: 8,
     paddingVertical: 2,
     borderRadius: 999,
   },
   
   counterText: {
-    color: "#D9D9D9",
-    fontWeight: "700",
+    color: `${colors.base.gray200}`,
+    fontFamily: `${fonts.fontFamilies.bold}`,
+    fontSize: Number(`${fonts.fontSizes.sm}`)
   },
 
   created: {
-    color: "#4EA8DE",
-    fontWeight: "700",
-    fontSize: 14,
+    color: `${colors.brand.blue}`,
+    fontFamily: `${fonts.fontFamilies.bold}`,
+    fontSize: Number(`${fonts.fontSizes.md}`),
   },
 
   done: {
-    color: "#8284FA",
-    fontWeight: "700",
-    fontSize: 14,
+    color: `${colors.brand.purple}`,
+    fontFamily: `${fonts.fontFamilies.bold}`,
+    fontSize: Number(`${fonts.fontSizes.md}`),
   },
 
   listEmpty: {
@@ -49,20 +51,20 @@ export const styles = StyleSheet.create({
     marginHorizontal: 24,
     paddingTop: 48,
     borderTopWidth: 1,
-    borderColor: "#333333",
+    borderColor: `${colors.base.gray400}`,
   },
   
   listEmptyTextTitle: {
-    fontSize: 14,
-    fontWeight: "700",
-    color: "#808080",
+    fontFamily: `${fonts.fontFamilies.bold}`,
+    fontSize: Number(`${fonts.fontSizes.md}`),
+    color: `${colors.base.gray300}`,
     marginTop: 16,
     lineHeight: 25, 
   },
 
   listEmptyTextSubtitle: {
-    fontSize: 14,
-    fontWeight: "400",
-    color: "#808080",
+    fontFamily: `${fonts.fontFamilies.regular}`,
+    fontSize: Number(`${fonts.fontSizes.md}`),
+    color: `${colors.base.gray300}`,
   },
 });

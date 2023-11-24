@@ -1,8 +1,9 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../tokens/index"
 
 export const styles = StyleSheet.create({
   container: {
     height: "100%",
-    backgroundColor: "#1A1A1A",
+    backgroundColor: `${colors.base.gray600}`,
   },
 });

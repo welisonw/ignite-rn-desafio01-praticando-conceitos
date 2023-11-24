@@ -6,6 +6,7 @@ import { InputText } from "../InputText";
 import { Button } from "../Button";
 import { Task } from "../../interfaces/Task";
 import * as crypto from "expo-crypto";
+import { colors, fonts } from "../../tokens";
 
 interface AddTaskProps {
   tasks: Task[];
@@ -52,7 +53,7 @@ export default function AddTask({ tasks, setTasks }: AddTaskProps) {
       <InputText value={taskTextInput} onTextChange={setTaskTextInput} inputRef={inputRef} />
 
       <Button onPress={handlePress}>
-        <PlusCircle color="#FFF" size={16} />
+        <PlusCircle color={colors.base.gray100} size={fonts.fontSizes.lg} />
       </Button>
     </View>
   );

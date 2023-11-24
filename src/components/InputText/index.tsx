@@ -1,6 +1,7 @@
 import { TextInput, View } from "react-native";
 import { styles } from "./styles";
 import { RefObject } from "react";
+import { colors } from "../../tokens";
 
 interface TextInputProps {
   inputRef: RefObject<TextInput>;
@@ -17,7 +18,7 @@ export const InputText = ({
     <View>
       <TextInput
         placeholder="Adicione uma nova tarefa"
-        placeholderTextColor="#808080"
+        placeholderTextColor={colors.base.gray300}
         style={[
           styles.input,
           inputRef.current?.isFocused() ? styles.inputFocused : null,

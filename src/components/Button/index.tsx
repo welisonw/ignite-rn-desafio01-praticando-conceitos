@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { TouchableHighlight, View } from "react-native";
 import { styles } from "./styles";
+import { colors } from "../../tokens";
 
 interface ButtonProps {
   onPress: () => void;
@@ -12,7 +13,7 @@ export const Button = ({ onPress, children }: ButtonProps) => {
     <TouchableHighlight
       activeOpacity={0.9}
       onPress={onPress}
-      underlayColor="#4EA8DE"
+      underlayColor={colors.brand.blue}
       style={styles.button}
     >
       <View>{children}</View>

@@ -2,6 +2,7 @@ import { styles } from "./styles";
 import { Check, CheckCircle2, Circle, Trash2 } from "lucide-react-native";
 import { Text, TouchableHighlight, TouchableOpacity, View } from "react-native";
 import { Task } from "../../interfaces/Task";
+import { colors } from "../../tokens";
 
 interface TaskItemProps extends Task {
   onTaskDone: (id: string) => void;
@@ -25,9 +26,9 @@ export const TaskItem = ({
     >
       <TouchableOpacity activeOpacity={0.7} onPress={() => onTaskDone(id)}>
         {isCompleted ? (
-          <CheckCircle2 size={24} color="#F2F2F2" fill="#5E60CE" />
+          <CheckCircle2 size={24} color={colors.base.gray100} fill={colors.brand.purple_dark} />
         ) : (
-          <Circle size={24} color="#4EA8DE" />
+          <Circle size={24} color={colors.brand.blue} />
         )}
       </TouchableOpacity>
 
@@ -38,10 +39,10 @@ export const TaskItem = ({
       <TouchableHighlight
         activeOpacity={0.9}
         onPress={() => onTaskDelete(id)}
-        underlayColor="#333333"
+        underlayColor={colors.base.gray400}
         style={styles.buttonDelete}
       >
-        <Trash2 color="#808080" size={16} />
+        <Trash2 color={colors.base.gray300} size={16} />
       </TouchableHighlight>
     </View>
   );

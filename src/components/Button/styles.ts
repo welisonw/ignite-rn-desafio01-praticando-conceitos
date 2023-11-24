@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../tokens";
 
 export const styles = StyleSheet.create({
   button: {
@@ -6,7 +7,7 @@ export const styles = StyleSheet.create({
     height: 52,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#1E6F9F",
+    backgroundColor: `${colors.brand.blue_dark}`,
     borderRadius: 6,
   },
 });
