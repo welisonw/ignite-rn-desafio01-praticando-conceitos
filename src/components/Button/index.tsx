@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { TouchableHighlight, TouchableOpacity, View } from "react-native";
+import { TouchableHighlight, View } from "react-native";
 import { styles } from "./styles";
 
 interface ButtonProps {
@@ -17,5 +17,5 @@ export const Button = ({ onPress, children }: ButtonProps) => {
     >
       <View>{children}</View>
     </TouchableHighlight>
-  );      
+  );
 };
