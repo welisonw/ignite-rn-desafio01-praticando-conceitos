@@ -1,12 +1,18 @@
 import { TextInput, View } from "react-native";
 import { styles } from "./styles";
-import { useState } from "react";
+import { RefObject } from "react";
 
-export const InputText = () => {
-  const [isFocused, setIsFocused] = useState(false);
+interface TextInputProps {
+  inputRef: RefObject<TextInput>;
+  value: string;
+  onTextChange: (text: string) => void;
+}
 
-  console.log(isFocused)
-
+export const InputText = ({
+  inputRef,
+  value,
+  onTextChange,
+}: TextInputProps) => {
   return (
     <View>
       <TextInput
@@ -14,10 +20,11 @@ export const InputText = () => {
         placeholderTextColor="#808080"
         style={[
           styles.input,
-          isFocused ? styles.inputFocused : null,
+          inputRef.current?.isFocused() ? styles.inputFocused : null,
         ]}
-        onFocus={() => setIsFocused(true)}
-        onBlur={() => setIsFocused(false)}
+        ref={inputRef}
+        value={value}
+        onChangeText={(text) => onTextChange(text)}
       />
     </View>
   );
