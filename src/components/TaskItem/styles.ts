@@ -7,6 +7,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     gap: 8,
+    height: 64,
     marginHorizontal: 24,
     backgroundColor: "#262626",
     marginBottom: 8,
@@ -26,13 +27,19 @@ export const styles = StyleSheet.create({
   textCreated: {
     flex: 1,
     color: `${colors.base.gray100}`,
+    fontFamily: `${fonts.fontFamilies.regular}`, 
     fontSize: Number(`${fonts.fontSizes.md}`),
+    lineHeight: Number(`${fonts.lineHeights.md}`),
+    marginLeft: 8,
   },
 
   textDone: {
     flex: 1,
     color: `${colors.base.gray300}`,
+    fontFamily: `${fonts.fontFamilies.regular}`, 
     fontSize: Number(`${fonts.fontSizes.md}`),
+    lineHeight: Number(`${fonts.lineHeights.md}`),
+    marginLeft: 8,
     textDecorationLine: "line-through",
   },
 
