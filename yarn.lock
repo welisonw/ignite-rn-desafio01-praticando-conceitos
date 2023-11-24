@@ -1171,6 +1171,11 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@expo-google-fonts/inter@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/inter/-/inter-0.2.3.tgz#82bf7224bb76fc6614a00393a9e9ee4d6dd09dcb"
+  integrity sha512-iHK9FI+dnE45X5c2Z5hSFwNH4zUWethizpbv3XUn0FIGw5jwvzriENz0a6wCdkI4/d+1QkurnHo5XHti7TbNJA==
+
 "@expo/bunyan@4.0.0", "@expo/bunyan@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@expo/bunyan/-/bunyan-4.0.0.tgz#be0c1de943c7987a9fbd309ea0b1acd605890c7b"
@@ -3341,6 +3346,13 @@ expo-file-system@~15.4.0, expo-file-system@~15.4.5:
   integrity sha512-xy61KaTaDgXhT/dllwYDHm3ch026EyO8j4eC6wSVr/yE12MMMxAC09yGwy4f7kkOs6ztGVQF5j7ldRzNLN4l0Q==
   dependencies:
     uuid "^3.4.0"
+
+expo-font@^11.6.0:
+  version "11.6.0"
+  resolved "https://registry.yarnpkg.com/expo-font/-/expo-font-11.6.0.tgz#7c1c8c82e3b437d54d911808fdf03578763913f3"
+  integrity sha512-ekfU0MN7vzJNGwQCJhxnhF2M9Fq/RtVF5xSQpr8+f4ISPimmKfEcArMHKCl4oG3saFVjSRX7fLbo38WOv3z5Mw==
+  dependencies:
+    fontfaceobserver "^2.1.0"
 
 expo-font@~11.4.0:
   version "11.4.0"
