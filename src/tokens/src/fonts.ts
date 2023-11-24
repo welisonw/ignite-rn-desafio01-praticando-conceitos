@@ -10,4 +10,8 @@ export const fonts = {
     md: 14,
 		lg: 16,
 	},
+
+  lineHeights: {
+    md: 19,
+  },
 };
