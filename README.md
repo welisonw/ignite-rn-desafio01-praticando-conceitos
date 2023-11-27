@@ -16,7 +16,7 @@ Aplicação de controle de tarefas no estilo todo list desenvolvido no primeiro 
 - Remover uma tarefa da listagem
 - Mostrar o progresso de conclusão das tarefas
 - Validar se uma tarefa já existe
-- Não permitir criar uma tarefa vazia
+- Não permitir a criação de uma tarefa vazia
 - Alerta de confirmação ao remover uma tarefa
 
 ## 🛠️ Tecnologias e ferrementas utilizadas
